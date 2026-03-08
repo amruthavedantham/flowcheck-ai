@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Process Gap Detection Agent</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+<div class="logo">FlowCheck AI</div>
+
+<ul class="nav-links">
+<li><a href="#features">Features</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#upload">Try</a></li>
+</ul>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>AI Process Gap Detection</h1>
+
+<p>
+Analyze SOPs and workflows to detect missing steps,
+logical inconsistencies, and improvement opportunities.
+</p>
+
+<button id="tryButton" class="primary-btn">
+Try Now
+</button>
+
+</div>
+
+<div class="hero-animation">
+
+<div class="flow">
+<div class="node">Document</div>
+<div class="arrow">→</div>
+<div class="node">AI Agent</div>
+<div class="arrow">→</div>
+<div class="node">Gap Detection</div>
+<div class="arrow">→</div>
+<div class="node">Report</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section id="features" class="features">
+
+<h2>What This Tool Offers</h2>
+
+<div class="feature-container">
+
+<div class="feature-card">
+<h3>Process Understanding</h3>
+<p>
+The AI reads your workflow and identifies the sequence
+of operational steps.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Gap Detection</h3>
+<p>
+Find missing actions, unclear logic,
+and potential execution issues.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Improvement Suggestions</h3>
+<p>
+Receive structured recommendations
+to improve operational clarity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WORKFLOW -->
+
+<section id="workflow" class="workflow">
+
+<h2>How It Works</h2>
+
+<div class="workflow-steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Upload Document</h3>
+<p>Provide your SOP or workflow file.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Process Understanding</h3>
+<p>The AI extracts steps and logic.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Gap Detection</h3>
+<p>Missing or unclear steps are identified.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Generate Report</h3>
+<p>A structured improvement report is produced.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- UPLOAD SECTION -->
+
+<section id="upload" class="upload-section">
+
+<h2>Upload Process Document</h2>
+
+<div class="upload-box">
+
+<input type="file" id="fileInput">
+
+<p id="fileName">No file selected</p>
+
+<button id="analyzeButton" class="primary-btn">
+Analyze Process
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- PROCESSING SECTION -->
+
+<section id="processing" class="processing hidden">
+
+<h2>Analyzing Document</h2>
+
+<p class="processing-text">
+The AI agent is understanding your workflow
+</p>
+
+<div class="dots">
+
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+
+</div>
+
+<ul class="process-steps">
+
+<li id="step1">Extracting workflow steps...</li>
+<li id="step2">Understanding process logic...</li>
+<li id="step3">Detecting missing actions...</li>
+<li id="step4">Generating report...</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- RESULTS -->
+
+<section id="results" class="results hidden">
+
+<h2>Analysis Results</h2>
+
+<div class="results-box">
+
+<h3>Detected Gaps</h3>
+
+<ul>
+
+<li>Approval step missing before deployment</li>
+<li>Testing phase not clearly defined</li>
+<li>No rollback procedure included</li>
+
+</ul>
+
+<h3>Suggested Improvements</h3>
+
+<ul>
+
+<li>Add QA validation stage</li>
+<li>Define rollback process for failures</li>
+<li>Introduce approval checkpoint</li>
+
+</ul>
+
+<button id="downloadBtn" class="download-btn">
+Download Report
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>© 2026 FlowCheck AI. All rights reserved.
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
