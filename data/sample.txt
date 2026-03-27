@@ -1,0 +1,5 @@
+1. User submits request
+2. System validates input
+3. Manager reviews request
+4. Approval is given
+5. Product is delivered
