@@ -49,3 +49,4 @@ def extract_text_from_pdf(file_path):
     cleaned_text = clean_text(raw_text)
 
     return cleaned_text
+
