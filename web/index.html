@@ -154,7 +154,7 @@ to improve operational clarity.
 
 <p id="fileName">No file selected</p>
 
-<button id="analyzeButton" class="primary-btn">
+<button id="analyzeButton" type="button" class="primary-btn">
 Analyze Process
 </button>
 
@@ -195,7 +195,6 @@ The AI agent is understanding your workflow
 </section>
 
 
-
 <!-- RESULTS -->
 
 <section id="results" class="results hidden">
@@ -205,24 +204,10 @@ The AI agent is understanding your workflow
 <div class="results-box">
 
 <h3>Detected Gaps</h3>
-
-<ul>
-
-<li>Approval step missing before deployment</li>
-<li>Testing phase not clearly defined</li>
-<li>No rollback procedure included</li>
-
-</ul>
+<ul id="gapsList"></ul>
 
 <h3>Suggested Improvements</h3>
-
-<ul>
-
-<li>Add QA validation stage</li>
-<li>Define rollback process for failures</li>
-<li>Introduce approval checkpoint</li>
-
-</ul>
+<ul id="suggestionsList"></ul>
 
 <button id="downloadBtn" class="download-btn">
 Download Report
@@ -231,8 +216,6 @@ Download Report
 </div>
 
 </section>
-
-
 
 <!-- FOOTER -->
 
