@@ -55,6 +55,10 @@ def extract_steps(text):
 
         # Bullet steps
         elif re.match(r"^\-|\•", line):
+            # skip form fields like "- Start date"
+            field_keywords = ["date", "name", "id", "type", "reason"]
+            if any(keyword in line.lower() for keyword in field_keywords):
+                continue
             steps.append(line)
 
         # Action sentences
